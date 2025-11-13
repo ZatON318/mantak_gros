@@ -129,7 +129,9 @@ int main(int argc, char* argv[])
   mlog_configure("", true);
   mlog_set_categories("+" MONERO_DEFAULT_LOG_CATEGORY ":INFO");
 
-  lookup(LOOKUP_A, {"seeds.moneroseeds.se", "seeds.moneroseeds.ae.org", "seeds.moneroseeds.ch", "seeds.moneroseeds.li"});
+  // Mantak Groš DNS seed nodes (placeholder)
+  // lookup(LOOKUP_A, {"seeds.mantakgros.com"});
+  MINFO("DNS checks disabled for Mantak Groš - no DNS seed nodes configured");
 
   lookup(LOOKUP_TXT, {"updates.moneropulse.org", "updates.moneropulse.net", "updates.moneropulse.co", "updates.moneropulse.se", "updates.moneropulse.fr", "updates.moneropulse.de", "updates.moneropulse.no", "updates.moneropulse.ch"});
 

@@ -730,31 +730,24 @@ namespace nodetool
     std::set<std::string> full_addrs;
     if (m_nettype == cryptonote::TESTNET)
     {
-      full_addrs.insert("176.9.0.187:28080");
-      full_addrs.insert("192.99.8.110:28080");
-      full_addrs.insert("37.187.74.171:28080");
-      full_addrs.insert("88.99.195.15:28080");
-      full_addrs.insert("5.104.84.64:28080");
+      // Mantak Groš testnet seed nodes
+      // Add your testnet seed nodes here with port 48080
+      // full_addrs.insert("your.testnet.node:48080");
     }
     else if (m_nettype == cryptonote::STAGENET)
     {
-      full_addrs.insert("176.9.0.187:38080");
-      full_addrs.insert("192.99.8.110:38080");
-      full_addrs.insert("37.187.74.171:38080");
-      full_addrs.insert("88.99.195.15:38080");
-      full_addrs.insert("5.104.84.64:38080");
+      // Mantak Groš stagenet seed nodes
+      // Add your stagenet seed nodes here with port 58080
+      // full_addrs.insert("your.stagenet.node:58080");
     }
     else if (m_nettype == cryptonote::FAKECHAIN)
     {
     }
     else
     {
-      full_addrs.insert("176.9.0.187:18080");
-      full_addrs.insert("88.198.163.90:18080");
-      full_addrs.insert("192.99.8.110:18080");
-      full_addrs.insert("37.187.74.171:18080");
-      full_addrs.insert("88.99.195.15:18080");
-      full_addrs.insert("5.104.84.64:18080");
+      // Mantak Groš mainnet seed nodes
+      // Add your mainnet seed nodes here with port 38085
+      // full_addrs.insert("your.mainnet.node:38085");
     }
     return full_addrs;
   }

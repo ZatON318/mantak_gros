@@ -46,7 +46,7 @@ target_link_libraries(cn_deserialize
 
 set_property(TARGET cn_deserialize
 	PROPERTY
-	OUTPUT_NAME "monero-utils-deserialize")
+	OUTPUT_NAME "mgros-utils-deserialize")
 
 
 set(object_sizes_sources

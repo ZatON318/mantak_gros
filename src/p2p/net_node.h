@@ -302,10 +302,11 @@ namespace nodetool
 
   private:
     const std::vector<std::string> m_seed_nodes_list =
-    { "seeds.moneroseeds.se"
-    , "seeds.moneroseeds.ae.org"
-    , "seeds.moneroseeds.ch"
-    , "seeds.moneroseeds.li"
+    { 
+      // Mantak Groš DNS seed nodes
+      // Add your own DNS seed nodes here, e.g.:
+      // "seeds.mantakgros.com"
+      // For now, the list is empty - you'll need to set up your own seed infrastructure
     };
 
     bool islimitup=false;

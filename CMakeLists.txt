@@ -49,7 +49,7 @@ if (IOS)
     INCLUDE(CmakeLists_IOS.txt)
 endif()
 
-project(monero)
+project(mgros)
 
 option (USE_CCACHE "Use ccache if a usable instance is found" ON)
 if (USE_CCACHE)
